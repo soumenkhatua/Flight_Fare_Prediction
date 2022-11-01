@@ -38,11 +38,13 @@ def main():
         Source=st.selectbox("Source",('Banglore', 'Kolkata', 'Delhi', 'Chennai', 'Mumbai'))
 
         Destination=st.selectbox("Destination",('New Delhi', 'Banglore', 'Cochin', 'Kolkata', 'Delhi', 'Hyderabad'))
+        
+        Arrival_Time=st.time_input("Arrival_Time")
         Dep_Time = st.time_input("Dep_Time")
         Dep_hour = Dep_Time.hour
         Dep_min = Dep_Time.minute
 
-        Arrival_Time=st.time_input("Arrival_Time")
+       
         Arrival_hour=Arrival_Time.hour
         Arrival_min=Arrival_Time.minute
         dur_hour=abs(Dep_hour-Arrival_hour)
