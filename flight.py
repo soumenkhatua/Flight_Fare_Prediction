@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import sklearn
 import pickle
 
-file=pickle.load(open(r"C:\Users\soume\OWn_flight_fare_prediction\flight_price_rf.pkl","rb"))
+file=pickle.load(open("flight_price_rf.pkl","rb"))
 
 def Flight_fare(input_data) :
     # changing input data into numpy array
